@@ -2,32 +2,32 @@
 # TODO: Complete the following string manipulation tasks
 
 # 1. Create variables for first name and last name
-first_name = ""  # Replace with your first name
-last_name = ""   # Replace with your last name
+first_name = "Ndu"  # Replace with your first name
+last_name = "Emmanuel"   # Replace with your last name
 
 # 2. Create a full name by combining first and last name
-full_name = ""  # Use string concatenation or f-strings
+full_name = first_name + " " + last_name  # Use string concatenation or f-strings
 
 # 3. Convert the full name to different cases
-full_name_upper = ""    # All uppercase
-full_name_lower = ""    # All lowercase
-full_name_title = ""    # Title case
+full_name_upper = full_name.upper()    # All uppercase
+full_name_lower = full_name.lower()    # All lowercase
+full_name_title = full_name.title()   # Title case
 
 # 4. Create a formatted introduction
 # Example: "Hello, my name is JOHN DOE, but you can call me john."
-introduction = ""
+introduction = (f" Hello, my name is {full_name_upper}, but you can call me {last_name.lower()}.")
 
 # 5. Count the number of characters in your full name (excluding spaces)
-char_count = 0
+char_count = len(full_name.replace(" ", ""))
 
 # 6. Check if your name contains the letter 'a' (case insensitive)
-contains_a = False
+contains_a = "a" in full_name.lower()
 
 # 7. Replace all spaces in your full name with underscores
-name_with_underscores = ""
+name_with_underscores = len(full_name.replace(" ","_"))
 
 # 8. Create a username by taking first 3 letters of first name and last 3 of last name
-username = ""
+username = first_name[:3].lower() + last_name[-3:].lower()
 
 # Print all results
 print("=== String Operations Results ===")
